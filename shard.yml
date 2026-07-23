@@ -1,0 +1,12 @@
+name: libqbe
+version: 0.1.0
+
+authors:
+  - Konstantin Makarchev <kostya27@gmail.com>
+
+crystal: '>= 1.19.1'
+
+license: MIT
+
+scripts:
+  postinstall: cd src/ext && make -j 4
