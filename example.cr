@@ -1,5 +1,7 @@
 require "./src/libqbe"
 
+puts Libqbe.version_str
+
 ssa_code = <<-SSA
   export function w $add(w %a, w %b) {
   @start

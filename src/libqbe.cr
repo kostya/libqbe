@@ -1,6 +1,11 @@
 module Libqbe
   VERSION = "0.1.0"
 
+  def self.version_str
+    tag = `(cd #{__DIR__}/ext/qbe-c 2>/dev/null && git describe --tags --always 2>/dev/null) || echo unknown`.strip
+    "Libqbe v#{VERSION} (QBE: #{tag})"
+  end
+
   def self.compile_string(
     ssa_code : String,
     output : String = "-",
