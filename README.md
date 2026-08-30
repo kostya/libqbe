@@ -1,6 +1,6 @@
 # libqbe
 
-Crystal bindings for the [QBE](https://c9x.me/compile/) compiler backend.
+Crystal bindings for the [QBE](https://c9x.me/compile/) compiler backend. NOTE: Not recommended for use, as I encountered segfaults. QBE heavily relies on global variables, which would cause issues with parallelism. Just use the qbe command directly instead.
 
 
 ## Installation
